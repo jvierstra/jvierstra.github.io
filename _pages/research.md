@@ -1,6 +1,6 @@
 ---
 layout: collection
-title: "Research Foci"
+title: "Research Areas"
 collection: research
 author_profile: true
 permalink: /research
