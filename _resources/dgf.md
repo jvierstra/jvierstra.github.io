@@ -19,7 +19,7 @@ Genomic DNase I footprinting enables quantitative, nucleotide-resolution delinea
 
 A web directory containing all of the material for download is available [here](https://resources.altius.org/~jvierstra/projects/footprinting.2020/). Note: the same versions of some of the processed data is also persistently hosted at [ZENODO](https://doi.org/10.5281/zenodo.3603548). All files correspond to human genome build `GRChr38/hg38`. See below for [file format descriptions](#appendix-file-format-descriptions).
 
-- **Metadata containing information about the 243 biosamples analyzed** ([excel](), [tsv]()) (corresponds to manuscript *Extended Data Table 1*)
+- **Metadata containing information about the 243 biosamples analyzed** ([excel](https://resources.altius.org/~jvierstra/projects/footprinting.2020/Extended_Data_Table_1.xlsx)) (corresponds to manuscript *Extended Data Table 1*)
 
 - **Footprints identified in individual datasets** ([directory listing](https://resources.altius.org/~jvierstra/projects/footprinting.2020/per.dataset/))  
   For each of the 243 datasets you will find the files outlined below. We have organized the files into sub-directories corresponding to each dataset.
