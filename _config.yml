@@ -121,7 +121,7 @@ author:
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      url: "https://twitter.com/jeffvierstra"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -133,7 +133,7 @@ author:
       # url: "https://instagram.com/"
     - label: "Curriculum vitae"
       icon: "fas fa-fw fa-file-pdf"
-      url: "/assets/pdfs/cv_20190809.pdf"
+      url: "/assets/pdfs/CV_20200525.pdf"
 
 # Site Footer
 footer:
@@ -288,13 +288,16 @@ collections:
   research:
     output: true
     permalink: /:collection/:path
+  resources:
+    output: true
+    permalink: /:collection/:path
 
 # Defaults
 defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: archive
     values:
       layout: single
       author_profile: true
@@ -304,9 +307,9 @@ defaults:
       related: true
   - scope:
       path: ""
-      type: research
+      type: resources
     values:
-      layout: archive
-      author_profile: true
+      layout: single
+      author_profile: false
 
 

@@ -177,16 +177,18 @@
   -ms-flex-align: center;
   align-items: center;
   min-height: $nav-height;
-  background: $background-color;
+  //background: $background-color;
 
   a {
     display: block;
     margin: 0 1rem;
     color: $masthead-link-color;
+    color: white;
     text-decoration: none;
 
     &:hover {
       color: $masthead-link-color-hover;
+      color:gold;
     }
 
     &.site-logo {
