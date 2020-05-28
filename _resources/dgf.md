@@ -21,7 +21,7 @@ A web directory containing all of the material for download is available [here](
 
 - **Metadata containing information about the 243 biosamples analyzed** ([excel](), [tsv]()) (corresponds to manuscript *Extended Data Table 1*)
 
-- **Footprints identified in individual datasets** ([directory listing](https://resources.altius.org/~jvierstra/projects/footprinting.2020/per.dataset/))\
+- **Footprints identified in individual datasets** ([directory listing](https://resources.altius.org/~jvierstra/projects/footprinting.2020/per.dataset/))  
   For each of the 243 datasets you will find the files outlined below. We have organized the files into sub-directories corresponding to each dataset.
 
   | Filename  | Description |
@@ -74,7 +74,7 @@ Documentation is hosted at [Read the docs](http://footprint-tools.readthedocs.io
 
 If you use this resource in your research, please kindly cite:
 
-Vierstra J *et al.* (2020). [Global reference mapping and dynamics of human transcription factor footprints.](https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1) ***bioRxiv***.
+Vierstra J *et al.* (2020). [Global reference mapping and dynamics of human transcription factor footprints.](https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1) *bioRxiv*.
 
 ## Appendix: File format descriptions
 

@@ -123,7 +123,7 @@ Software and scripts are available at [GitHub](http://www.github.com/jvierstra/m
 
 If you use this resource in your research, please kindly cite:
 
-Vierstra J *et al.* (2020). [Global reference mapping and dynamics of human transcription factor footprints.](https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1) ***bioRxiv***.
+Vierstra J *et al.* (2020). [Global reference mapping and dynamics of human transcription factor footprints.](https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1) *bioRxiv*.
 
 ## Additional resources
 
