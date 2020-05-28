@@ -1,6 +1,6 @@
 ---
-title: "Digital genomic footprints"
-subtitle: Vierstra et al. 2020 bioRxiv
+title: "Digital genomic footprinting"
+subtitle: Data from Vierstra et al. 2020 bioRxiv
 excerpt: >
         Genomic DNase I footprinting enables quantitative, nucleotide-resolution delineation of sites of transcription factor occupancy within native chromatin. We combined sampling of >67 billion uniquely mapping DNase I cleavages from >240 human cell types and states to index human genomic footprints.
 header:
@@ -41,13 +41,14 @@ A web directory containing all of the material for download is available [here](
 
   Note: starch format requries [BEDOPS](http://bedops.readthedocs.io) to decompress
 
-- **Consensus footprints** ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/Consensus_footprints_and_motifs_hg38.bed.gz))\
+- **Consensus footprints** ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/Consensus_footprints_and_motifs_hg38.bed.gz))  
   Re-analysis of the individual datasets using an Emperical Bayesian framework.
 
-  - **Footprinted motif archetypes** ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/Collapsed_motifs_overlapping_consensus_footprints_hg38.bed.gz))
+  - **Footprinted motif archetypes** ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/Collapsed_motifs_overlapping_consensus_footprints_hg38.bed.gz))  
+    Motif archetypes matches that overlap consensus footprints (see [motif clustering](/resources/motif_clustering) for more information) 
 
-  - **Footprint-by-biosample matrix** \
-    Matrix delineate the occupancy of individual footprints (row) in individual biosamples (columns). Biosamples (columns) in same order as sample metadata table above.
+  - **Footprint-by-biosample matrix**  
+    Matrix delineating the occupancy of individual footprints (row) in individual biosamples (columns). Biosamples (columns) in same order as sample metadata table.
 
       - Binary occupied/unoccupied matrix ([gzipped tsv](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/Consensus_index_matrix_binary_hg38.bed.gz))
       - Posterior matrix (full probabilities) ([gzipped tsv](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/Consensus_index_matrix_full_hg38.bed.gz))
