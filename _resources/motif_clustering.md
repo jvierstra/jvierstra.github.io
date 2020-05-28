@@ -14,11 +14,11 @@ toc_sticky: True
 The redundancy and overlap between various motif model databases complicate downstream analysis and interpretation. We computed the pairwise similarity for >2,000 motif models determined for both human and mouse TFs and clustered them into 286 distinct motif clusters. Within each cluster we aligned motifs to each other to generate an archetypal consensus motif.
 
 
-{% include figure image_path='/assets/img/clustering_workflow.png' alt='Motif clustering workflow' %}
+{% include figure image_path='/assets/img/motif_clustering_workflow.png' alt='Motif clustering workflow' %}
 
 We scanned the entire genome using each motif model (all 2,179 models), and then repositioned the coordinates of each genomic match according to each motifs relative position to its archetypal model. After adjusting the coordinates of each motif match, we remove all duplicates (same position and motif cluster), retaining a single match at any position in the genome.
 
-{% include figure image_path='/assets/img/motif_browser_shot.png' alt='Browsershot of motif UCSC track' %}
+{% include figure image_path='/assets/img/motif_clustering_browser_shot.png' alt='Browsershot of motif UCSC track' %}
 
 Some key **advantages** of the this approach:
 
@@ -33,19 +33,18 @@ Some notable **caveats/shortcomings** that should be considered:
 
 ## Included motif databases (v1.0)
 
-JASPAR 2018
-: Models derived from published and experimentally defined transcription factor binding sites for eukaryotes. The "CORE vertabrates" non-redundant PFMs were included.
+**[JASPAR 2018](http://jaspar.genereg.net/)**: Models derived from published and experimentally defined transcription factor binding sites for eukaryotes. The "CORE vertabrates" non-redundant PFMs were included.
+
 - Motif models [[MEME-format](https://resources.altius.org/~jvierstra/projects/motif-clustering/databases/jaspar2018/JASPAR2018_CORE_vertebrates_non-redundant_pfms.meme)]
 - Motif weblogos [[EPS-format](https://resources.altius.org/~jvierstra/projects/motif-clustering/databases/jaspar2018/logos)]
 
 
-Taipale 2013 HT-SELEX
-: Models derived from high-throughput SELEX experiments using bacterially expressed human and mouse DNA-binding domains. See Table S3 from publication.
+**[Taipale 2013 HT-SELEX](https://doi.org/10.1016/j.cell.2012.12.009)**: Models derived from high-throughput SELEX experiments using bacterially expressed human and mouse DNA-binding domains. See Table S3 from publication.
 - Motif models [[MEME-format](https://resources.altius.org/~jvierstra/projects/motif-clustering/databases/jolma2013/jolma2013.meme)]
 - Motif weblogos [[EPS-format](https://resources.altius.org/~jvierstra/projects/motif-clustering/databases/jolma2013/logos)]
 
-HOCOMOCO version 11
-: Models derived from ChIP-seq data (680 human + 452 mouse TFs)
+**[HOCOMOCO version 11](https://hocomoco11.autosome.ru/)**: Models derived from ChIP-seq data (680 human + 452 mouse TFs)
+
 - Motif models [Human: [MEME-format](https://resources.altius.org/~jvierstra/projects/motif-clustering/databases/hocomoco_v11/HOCOMOCOv11_core_HUMAN_mono_meme_format.meme), Mouse: [MEME-format](https://resources.altius.org/~jvierstra/projects/motif-clustering/databases/hocomoco_v11/HOCOMOCOv11_core_MOUSE_mono_meme_format.meme)]
 - Motif weblogos: [[EPS-format](https://resources.altius.org/~jvierstra/projects/motif-clustering/databases/hocomoco_v11/logos)]
 
@@ -57,7 +56,7 @@ Motifs scans were performed with [MOODS]()
 python2 moods_dna.py  \
 	--sep ";" -s h38.fa --p-value 0.0001 \
 	--lo-bg 2.977e-01 2.023e-01 2.023e-01 2.977e-01 \
-	-m PFM_FILE -o OUTFILE
+	-m ${PFM_FILE} -o ${OUTFILE}
 ```
 
 ## Downloads
@@ -107,7 +106,8 @@ Clustering of 2179 motif models (3 databases above)
 
 ## Browser tracks
 
-To visualize the motif matches in the genome, I have created a [trackhub](https://genome.ucsc.edu/goldenPath/help/hubQuickStart.html) for the UCSC Genome Browser. Briefly, you can load this track by navigating on any UCSC browser instance to ```Data > Trackhubs``` and then copying and pasting the following URL:
+
+To visualize the motif matches in the genome, I have created a [trackhub](https://genome.ucsc.edu/goldenPath/help/hubQuickStart.html) for the UCSC Genome Browser. You can load this track by navigating on any UCSC browser instance to "Data &rarr; Trackhubs" and then copying and pasting the following URL:
 
 ```
 https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0/hub.txt

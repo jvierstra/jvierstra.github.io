@@ -6,17 +6,14 @@
 
 
 $background-color: white;
-
 $sans-serif: 'Roboto Condensed', sans-serif;
-$doc-font-size: 14 !default;
 $link-color: blue;
-$info-color: blue;
 
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-@import "assets/css/syntax";
+@import "syntax.css";
 
 .alert {
 	display: inline;

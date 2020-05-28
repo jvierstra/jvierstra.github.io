@@ -7,8 +7,10 @@ I am an investigator at the Altius Institute for Biomedical Sciences. My researc
 
 - **Mapping chromatin structure & function using nucleases**
 
-  Specific and non-specific endonucleases have arguably been the most important tools in genomic research (think restriction nucleases and more recently genome-editting). I have developed methods that leverage nucleases for nucleotide-resolution maps of transcription factor occupancy and function within the genome.
+  Specific and non-specific endonucleases have arguably been the most important tools in modern genomic research (*e.g.*, restriction nucleases or more recently genome-editing reagents). I have developed methods that leverage nucleases to create *in vivo* nucleotide-resolution maps of transcription factor occupancy and function within the genome.
 
 - **Cis-regulatory encoding of cell identity and fate potential**
 
   Lineage commitment and differentiation is driven by the concerted action of master transcriptional regulators at their target chromatin sites. We use erythropoiesis, megakaryopoiesis and myelopoiesis to investigate how the temporal interplay of transcription factors with chromatin determines cell fate potential.
+
+Prior to Altius, I did both doctoral and postdoctoral training at the University of Washington. 

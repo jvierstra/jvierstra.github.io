@@ -13,7 +13,7 @@ toc_sticky: True
 Genomic DNase I footprinting enables quantitative, nucleotide-resolution delineation of sites of transcription factor occupancy within native chromatin. We combined sampling of >67 billion uniquely mapping DNase I cleavages from >240 human cell types and states to index, with unprecedented accuracy and resolution, human genomic footprints and thereby the sequence elements that encode transcription factor recognition sites. 
 
 
-{% include figure image_path='/assets/img/dgf.png' alt='Digital genomic footprinting' %}
+{% include figure image_path='/assets/img/dgf_example.png' alt='Digital genomic footprinting' %}
 
 ## Downloads
 
