@@ -5,7 +5,7 @@ author_profile: true
 permalink: /publications
 ---
 
-A complete biolography can be found at either [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=vierstra+j%5Bau%5D&sort=pubdate) or [Google Scholar](https://scholar.google.com/citations?user=wlX37YwAAAAJ&hl=en).
+A complete bibliography can be found at either [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=vierstra+j%5Bau%5D&sort=pubdate) or [Google Scholar](https://scholar.google.com/citations?user=wlX37YwAAAAJ&hl=en).
 
 \* denotes equal contribution, <sup>#</sup> corresponding author
 
