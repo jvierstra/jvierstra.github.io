@@ -5,10 +5,9 @@
 @charset "utf-8";
 
 
-$background-color: white;
 $sans-serif: 'Roboto Condensed', sans-serif;
 $link-color: blue;
-
+$background-color: white;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

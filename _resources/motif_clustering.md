@@ -48,16 +48,20 @@ Some notable **caveats/shortcomings** that should be considered:
 - Motif models [Human: [MEME-format](https://resources.altius.org/~jvierstra/projects/motif-clustering/databases/hocomoco_v11/HOCOMOCOv11_core_HUMAN_mono_meme_format.meme), Mouse: [MEME-format](https://resources.altius.org/~jvierstra/projects/motif-clustering/databases/hocomoco_v11/HOCOMOCOv11_core_MOUSE_mono_meme_format.meme)]
 - Motif weblogos: [[EPS-format](https://resources.altius.org/~jvierstra/projects/motif-clustering/databases/hocomoco_v11/logos)]
 
-## Notes
+## Cluster visualization
 
-Motifs scans were performed with [MOODS]()
+Visit [this page](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0/cluster_viz.html) to view the 286 clustered motif models (v1.0).
 
-```bash
-python2 moods_dna.py  \
-	--sep ";" -s h38.fa --p-value 0.0001 \
-	--lo-bg 2.977e-01 2.023e-01 2.023e-01 2.977e-01 \
-	-m ${PFM_FILE} -o ${OUTFILE}
+## Browser tracks
+
+
+To visualize the motif matches in the genome, I have created a [trackhub](https://genome.ucsc.edu/goldenPath/help/hubQuickStart.html) for the UCSC Genome Browser. You can load this track by navigating on any UCSC browser instance to "Data &rarr; Trackhubs" and then copying and pasting the following URL:
+
 ```
+https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0/hub.txt
+```
+
+Alternatively, you can [click here](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&hubUrl=https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0/hub.txt) to automatically load this trackhub at the Genome Browser hosted at UCSC.
 
 ## Downloads
 
@@ -104,21 +108,20 @@ Clustering of 2179 motif models (3 databases above)
 |7|`best_model`|RREB1_MA0073.1 | Best matching motif model from cluster|
 |8|`num_models`|1 | Number of motif model from cluster with a match|
 
-
-## Browser tracks
-
-
-To visualize the motif matches in the genome, I have created a [trackhub](https://genome.ucsc.edu/goldenPath/help/hubQuickStart.html) for the UCSC Genome Browser. You can load this track by navigating on any UCSC browser instance to "Data &rarr; Trackhubs" and then copying and pasting the following URL:
-
-```
-https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0/hub.txt
-```
-
-Alternatively, you can [click here](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&hubUrl=https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0/hub.txt) to automatically load this trackhub at the Genome Browser hosted at UCSC.
-
 ## Code
 
 Software and scripts are available at [GitHub](http://www.github.com/jvierstra/motif-clustering) to reproduce the motif clustering.
+
+## Notes
+
+Motifs scans were performed with [MOODS]()
+
+```bash
+python2 moods_dna.py  \
+	--sep ";" -s h38.fa --p-value 0.0001 \
+	--lo-bg 2.977e-01 2.023e-01 2.023e-01 2.977e-01 \
+	-m ${PFM_FILE} -o ${OUTFILE}
+```
 
 ## Citation
 
