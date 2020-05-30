@@ -183,12 +183,10 @@
     display: block;
     margin: 0 1rem;
     color: $masthead-link-color;
-    color: white;
     text-decoration: none;
 
     &:hover {
       color: $masthead-link-color-hover;
-      color:gold;
     }
 
     &.site-logo {
@@ -275,9 +273,10 @@
       margin: 0;
       padding: 10px 20px;
       font-size: $type-size-5;
+      color: black;
 
       &:hover {
-        color: $masthead-link-color-hover;
+        color: black;
         background: $navicon-link-color-hover;
       }
     }

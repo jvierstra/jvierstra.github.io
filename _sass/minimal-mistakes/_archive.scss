@@ -52,10 +52,11 @@
 
   a {
     text-decoration: none;
-    color: $masthead-link-color;
+    /*color: $masthead-link-color;*/
+    color: $article-link-color;
     
      &:hover {
-        color: $masthead-link-color-hover;
+        color: $article-link-color-hover;
       }
 
 

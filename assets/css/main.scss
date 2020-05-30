@@ -9,6 +9,10 @@ $sans-serif: 'Roboto Condensed', sans-serif;
 $link-color: blue;
 $background-color: white;
 
+$masthead-link-color: white;
+$masthead-link-color-hover: gold;
+
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
