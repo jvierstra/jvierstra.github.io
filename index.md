@@ -13,4 +13,4 @@ I am an investigator at the Altius Institute for Biomedical Sciences. My researc
 
   Lineage commitment and differentiation is driven by the concerted action of master transcriptional regulators at their target chromatin sites. We use erythropoiesis, megakaryopoiesis and myelopoiesis to investigate how the temporal interplay of transcription factors with chromatin determines cell fate potential.
 
-Prior to Altius, I did both doctoral and postdoctoral training at the University of Washington. 
+Prior to Altius, I did both doctoral and postdoctoral training at the University of Washington. I obtained my *BSc* in Genetics and Computer Science at the University of Wisconsin.

@@ -109,7 +109,7 @@ See [hotspot2 documentation](https://github.com/Altius/hotspot2) for file descri
 |8|`width`| 12 | Width of consensus footprint (column 3-column 2)|
 |9|`summit_pos`| 97320049 | Estimated footprint summit position|
 |10|`core_start`| 97320042 | Start position of core-region containing 95% of per-biosample summits|
-|11|`core_end`| 97320053 | [End position of core-region containing 95% of per-biosample summits|
+|11|`core_end`| 97320053 | End position of core-region containing 95% of per-biosample summits|
 |12|`motif_clusters`| CTCF;KLF/SP/2;ZNF563 | [Non-redundant motif archetype matches](/resources/motifs) w/ 90% overlap, `;` delimited|
 
 **Footprinted motif archetypes** (`Collapsed_motifs_overlapping_consensus_footprints_hg38.bed.gz`)
