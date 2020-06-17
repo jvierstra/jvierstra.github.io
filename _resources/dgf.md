@@ -82,7 +82,7 @@ Vierstra J *et al.* (2020). [Global reference mapping and dynamics of human tran
 
 See [hotspot2 documentation](https://github.com/Altius/hotspot2) for file descriptions.
 
-**Per-nucleotide footprint statistics** (`interval.all.fps.bedgraph`)
+**Per-nucleotide footprint statistics** (`interval.all.bedgraph`)
   
 || Column | Example | Description |
 |---|-------|--------|---------|
