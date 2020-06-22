@@ -9,13 +9,13 @@ A complete bibliography can be found at either [PubMed](https://pubmed.ncbi.nlm.
 
 \* denotes equal contribution, <sup>#</sup> corresponding author
 
-## Pre-prints
+## Recent Pre-prints
 
 - Georgolopoulos G, Iwata M, Psatha N, Nishida A, Som T, Yiangou M, Stamatoyannopoulos JA, ***Vierstra J***<sup>#</sup> (2020). [Chromatin dynamics during hematopoiesis reveal discrete regulatory modules instructing differentiation.](https://www.biorxiv.org/content/10.1101/2020.04.02.022566v3) *bioRxiv*.
 
-- ***Vierstra J***<sup>#</sup>, Lazar J, Sandstrom R *et al.* (2020). [Global reference mapping and dynamics of human transcription factor footprints.](https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1) *bioRxiv*.  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3843581.svg)](https://doi.org/10.5281/zenodo.3843581) ([Supplementary website](resources/dgf))
+## 2020
 
+- ***Vierstra J***<sup>#</sup>, Lazar J, Sandstrom R *et al.* (2020). Global reference mapping of human transcription factor footprints. *Nature*, *in press*. [Pre-print]((https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1)) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3843581.svg)](https://doi.org/10.5281/zenodo.3843581) ([Supplementary website](resources/dgf))
 
 ## 2019
 

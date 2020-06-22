@@ -3,7 +3,7 @@ layout: archive
 author_profile: true
 ---
 
-I am an investigator at the Altius Institute for Biomedical Sciences. My research broadly focuses on deciphering the structure-function relationship of chromatin. Some of my main areas of interest are:
+I am an investigator at the Altius Institute for Biomedical Sciences. My research focuses on deciphering the structure-function relationship of chromatin. Some of my main areas of interest are:
 
 - **Mapping chromatin structure & function using nucleases**
 
