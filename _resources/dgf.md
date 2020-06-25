@@ -19,7 +19,7 @@ Genomic DNase I footprinting enables quantitative, nucleotide-resolution delinea
 
 A web directory containing all of the material for download is available [here](https://resources.altius.org/~jvierstra/projects/footprinting.2020/). Note: the same versions of some of the processed data is also persistently hosted at [ZENODO](https://doi.org/10.5281/zenodo.3603548). All files correspond to human genome build `GRChr38/hg38`. See below for [file format descriptions](#appendix-file-format-descriptions).
 
-- **Metadata containing information about the 243 biosamples analyzed** ([excel](https://resources.altius.org/~jvierstra/projects/footprinting.2020/Extended_Data_Table_1.xlsx)) (corresponds to manuscript *Extended Data Table 1*)
+- **Metadata containing information about the 243 biosamples analyzed** ([excel](https://resources.altius.org/~jvierstra/projects/footprinting.2020/Supplementary_Table_1.xlsx)) (corresponds to manuscript *Supplementary Table 1*)
 
 - **Footprints identified in individual datasets** ([directory listing](https://resources.altius.org/~jvierstra/projects/footprinting.2020/per.dataset/))  
   For each of the 243 datasets you will find the files outlined below. We have organized the files into sub-directories corresponding to each dataset.
@@ -40,6 +40,18 @@ A web directory containing all of the material for download is available [here](
   | `interval.all.fps.*.(bed|bed.gz|bb)` | FPR thresholded footprints |
 
   Note: starch format requries [BEDOPS](http://bedops.readthedocs.io) to decompress
+
+- **Per-nucleotide posterior footprint probability** ([gzipped bedgraph](https://resources.altius.org/~jvierstra/projects/footprinting.2020/posteriors/posteriors.per-nt.bed.gz) and [tabix index](https://resources.altius.org/~jvierstra/projects/footprinting.2020/posteriors/posteriors.per-nt.bed.gz.tbi))  
+  Each row contains the –log transformed posterior probability of footprint in each of the 243 datasets (used to create **Fig. 1** of associated manuscript). Columns (biosamples) are in the same order as sample metadata file above (Supplementary Table 1).
+
+  Note that this file is massive (\~66Gb) and we have provided a TABIX-index alongside to facilitate remote access using ```tabix```:
+```
+[jvierstra@test0 $] tabix https://resources.altius.org/~jvierstra/projects/footprinting.2020/posteriors/posteriors.per-nt.bed.gz chr19:45,001,882-45,002,279 ...
+chr19   45001881        45001882        0.0     1.585874187526315e-08   7.332801033044234e-12   1.1864528914884431e-08  2.4502702181905534e-05 ...
+chr19   45001886        45001887        7.63844553830495e-07    1.0648232517951328e-08  0.0     2.842170943040401e-14   6.063725059846092e-07 ...
+chr19   45001887        45001888        0.026677374186842684    2.448578051428285e-07   5.897504706808832e-13   4.969464839632565e-10   2.277549524620781e-05 ...
+...
+```
 
 - **Consensus footprints** ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/Consensus_footprints_and_motifs_hg38.bed.gz))  
   Re-analysis of the individual datasets using an Emperical Bayesian framework.
