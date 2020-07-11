@@ -5,7 +5,7 @@ excerpt: >
         Genomic DNase I footprinting enables quantitative, nucleotide-resolution delineation of sites of transcription factor occupancy within native chromatin. We combined sampling of >67 billion uniquely mapping DNase I cleavages from >240 human cell types and states to index human genomic footprints.
 header:
   teaser: /assets/img/teasers-01.png
-date: 2020-05-15
+date: 2020-07-10
 toc: True
 toc_sticky: True
 ---
@@ -64,8 +64,8 @@ chr19   45001887        45001888        0.026677374186842684    2.44857805142828
   - **Footprint-by-biosample matrix**  
     Matrix delineating the occupancy of individual consensus footprints (row) in individual biosamples (columns). Biosamples (columns) in same order as sample metadata table.
 
-      - Binary occupied/unoccupied matrix ([gzipped tsv](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_index_matrix_binary_hg38.bed.gz))
-      - Full posterior probabilities ([gzipped tsv](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_index_matrix_full_hg38.bed.gz))
+      - Binary occupied/unoccupied matrix ([gzipped tsv](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_index_matrix_binary_hg38.txt.gz))
+      - Full posterior probabilities ([gzipped tsv](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_index_matrix_full_hg38.txt.gz))
 
 - **Single nucleotide variants tested for allelic imbalance**  
   *De novo* genotypes derived from 147 individuals and allelic read counts for each variant in all 243 datasets. The assignment of each biosample to an individual is found in Supplementary Table 1 (above).
@@ -168,7 +168,7 @@ For more information about the motif archetypes see [here](/resources/motif_clus
 |7|  `ref_reads`     |196         |Number of reads mapped to reference allele|
 |8|  `num_hets`      |6           |Number of heterozygous biosamples|
 |9|  `allelic_ratio` |0.3513      |Proportion reads mapping to reference allele|
-|10| `bb_pval`    |0.0017 |Beta-binomial *p*-value|
+|10| `bb_test_stat`    |0.0017 |Beta-binomial test statistic|
 |11| `adj_p`   |0.0468120827793      |Adjusted *p*-value|
 |12| `dhs`           |1         |Overlapping DHS peak (binary indicator)|
 |13| `fps`    |1           |Overlapping consensus footprint (binary indicator)|

@@ -15,7 +15,7 @@ A complete bibliography can be found at either [PubMed](https://pubmed.ncbi.nlm.
 
 ## 2020
 
-- ***Vierstra J***<sup>#</sup>, Lazar J, Sandstrom R *et al.* (2020). Global reference mapping of human transcription factor footprints. *Nature*, *in press*. [Pre-print]((https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1)) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3843581.svg)](https://doi.org/10.5281/zenodo.3843581) ([Supplementary website](resources/dgf))
+- ***Vierstra J***<sup>#</sup>, Lazar J, Sandstrom R *et al.* (2020). Global reference mapping of human transcription factor footprints. *Nature*, *in press*. [Pre-print](https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3843581.svg)](https://doi.org/10.5281/zenodo.3843581) ([Supplementary website](resources/dgf))
 
 ## 2019
 
