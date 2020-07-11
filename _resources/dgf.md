@@ -1,6 +1,6 @@
 ---
 title: "Digital genomic footprinting"
-subtitle: Data from Vierstra et al. 2020 bioRxiv
+subtitle: Data from Vierstra et al. 2020 Nature
 excerpt: >
         Genomic DNase I footprinting enables quantitative, nucleotide-resolution delineation of sites of transcription factor occupancy within native chromatin. We combined sampling of >67 billion uniquely mapping DNase I cleavages from >240 human cell types and states to index human genomic footprints.
 header:
@@ -26,23 +26,23 @@ A web directory containing all of the material for download is available [here](
 
   | Filename  | Description |
   |-----------|-------------|
-  | `reads.bam` | BAM alignment file from DNase I experiment |
+  | `reads.(bam|bam.bai)` | BAM alignment file from DNase I experiment |
   | `hotspots.bed.starch` | DNase I hotspots |
   | `peaks.bed.starch` | DNase I peaks |
   | `dm.json` | Dispersion model file |
   | `qc.pdf` | QC plots of dispersion model |
-  | `interval.all.bedgraph.(gz|starch)` | Per-nucleotide footprint statistics |
+  | `interval.all.bedgraph.(gz|gz.tbi|starch)` | Per-nucleotide footprint statistics |
   | `interval.all.obs.bw` | Observed cleavage counts (bigWig) |
   | `interval.all.exp.bw` | Expected cleavage counts (bigWig) |
   | `interval.all.lnpval.bw` | Per-nucleotide *p*-value (bigWig) |
   | `interval.all.winlnpval.bw` | Windowed *p*-value (bigWig) |
   | `interval.all.fpr.bw` | FPR adjusted *p*-values (bigWig) |
-  | `interval.all.fps.*.(bed|bed.gz|bb)` | FPR thresholded footprints |
+  | `interval.all.fps.*.(bed|bed.gz|bed.gz.tbi|bb)` | FPR thresholded footprints |
 
   Note: starch format requries [BEDOPS](http://bedops.readthedocs.io) to decompress
 
 - **Per-nucleotide posterior footprint probability** ([gzipped bedgraph](https://resources.altius.org/~jvierstra/projects/footprinting.2020/posteriors/posteriors.per-nt.bed.gz) and [tabix index](https://resources.altius.org/~jvierstra/projects/footprinting.2020/posteriors/posteriors.per-nt.bed.gz.tbi))  
-  Each row contains the –log transformed posterior probability of footprint in each of the 243 datasets (used to create **Fig. 1** of associated manuscript). Columns (biosamples) are in the same order as sample metadata file above (Supplementary Table 1).
+  Each row contains the –log transformed posterior probability of footprint in each of the 243 datasets (used to create **Fig. 1** of associated manuscript). Columns (biosamples) are in the same order as sample metadata file above (Supplementary Table 1). *Genomic positions were excluded if **no** individual sample has a posterior footprint probability > 0.8.*  
 
   Note that this file is massive (\~66Gb) and we have provided a TABIX-index alongside to facilitate remote access using ```tabix```:
 ```
@@ -53,17 +53,27 @@ chr19   45001887        45001888        0.026677374186842684    2.44857805142828
 ...
 ```
 
-- **Consensus footprints** ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/Consensus_footprints_and_motifs_hg38.bed.gz))  
+  Additionally, an example of how to remotely access and plot these data using Python can be found [here](https://footprint-tools.readthedocs.io/en/latest/examples/plot.html).
+
+- **Consensus footprints** ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_footprints_and_motifs_hg38.bed.gz) and [tabix index](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_footprints_and_motifs_hg38.bed.gz.tbi))  
   Re-analysis of the individual datasets using an Emperical Bayesian framework.
 
-  - **Footprinted motif archetypes** ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/Collapsed_motifs_overlapping_consensus_footprints_hg38.bed.gz))  
+  - **Footprinted motif archetypes** ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/collapsed_motifs_overlapping_consensus_footprints_hg38.bed.gz) and [tabix index](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/collapsed_motifs_overlapping_consensus_footprints_hg38.bed.gz.tbi))  
     Motif archetypes matches that overlap consensus footprints (see [motif clustering](/resources/motif_clustering) for more information) 
 
   - **Footprint-by-biosample matrix**  
-    Matrix delineating the occupancy of individual footprints (row) in individual biosamples (columns). Biosamples (columns) in same order as sample metadata table.
+    Matrix delineating the occupancy of individual consensus footprints (row) in individual biosamples (columns). Biosamples (columns) in same order as sample metadata table.
 
-      - Binary occupied/unoccupied matrix ([gzipped tsv](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/Consensus_index_matrix_binary_hg38.bed.gz))
-      - Posterior matrix (full probabilities) ([gzipped tsv](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/Consensus_index_matrix_full_hg38.bed.gz))
+      - Binary occupied/unoccupied matrix ([gzipped tsv](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_index_matrix_binary_hg38.bed.gz))
+      - Full posterior probabilities ([gzipped tsv](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_index_matrix_full_hg38.bed.gz))
+
+- **Single nucleotide variants tested for allelic imbalance**  
+  *De novo* genotypes derived from 147 individuals and allelic read counts for each variant in all 243 datasets. The assignment of each biosample to an individual is found in Supplementary Table 1 (above).
+
+    - Genotype and allelic read depth for each biosample ([gzipped vcf](https://resources.altius.org/~jvierstra/projects/footprinting.2020/allelic_imbalance/genotypes.vcf.gz) and [tabix index](https://resources.altius.org/~jvierstra/projects/footprinting.2020/allelic_imbalance/genotypes.vcf.gz.tbi))  
+    The file format is self-explantory (see header for description via `bcftools view -h genotypes.vcf.gz`)
+
+    - Variants tested for imbalance (combining data by genotype) using Beta-binomial distribution ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/allelic_imbalance/tested_snvs_padj.bed.gz) and [tabix index](https://resources.altius.org/~jvierstra/projects/footprinting.2020/allelic_imbalance/tested_snvs_padj.bed.gz.tbi))
 
 ## Visualization
 
@@ -76,15 +86,15 @@ https://resources.altius.org/~jvierstra/projects/footprinting.2020/hub.txt
 Alternatively, you can [click here](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&hubUrl=https://resources.altius.org/~jvierstra/projects/footprinting.2020/hub.txt){:target="_blank"} to automatically load this trackhub at the Genome Browser hosted at UCSC.
 
 
-## Code
+## Code & Tutorials
 
 Software and scripts are available at [GitHub](http://github.com/jvierstra/footprint-tools). 
 
-Documentation is hosted at [Read the docs](http://footprint-tools.readthedocs.io).
+Documentation is hosted at [Read the docs](http://footprint-tools.readthedocs.io). Included in the documentation are [examples](https://footprint-tools.readthedocs.io/en/latest/examples.html) of how to remotely access, manipulate and visualize genomic footprinting data.
 
 ## Citation
 
-If you use this resource in your research, please kindly cite:
+If you use this resource in your research, please cite:
 
 Vierstra J *et al.* (2020). [Global reference mapping and dynamics of human transcription factor footprints.](https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1) *bioRxiv*.
 
@@ -94,7 +104,7 @@ Vierstra J *et al.* (2020). [Global reference mapping and dynamics of human tran
 
 See [hotspot2 documentation](https://github.com/Altius/hotspot2) for file descriptions.
 
-**Per-nucleotide footprint statistics** (`interval.all.bedgraph`)
+**Per-nucleotide footprint statistics for individual datasets** (`interval.all.bedgraph.gz`)
   
 || Column | Example | Description |
 |---|-------|--------|---------|
@@ -107,7 +117,7 @@ See [hotspot2 documentation](https://github.com/Altius/hotspot2) for file descri
 |7|`winlp`|14.5 | –log *p*-value windowed test (Stouffer's *Z*)|
 |8|`fdr`| 0.0014 | Empircal false-discovery rate |
 
-**Consensus footprints** (`Consensus_footprints_and_motifs_hg38.bed.gz`)
+**Consensus footprints** (`consensus_footprints_and_motifs_hg38.bed.gz`)
 
 || Column | Example | Description |
 |---|-------|--------|---------|
@@ -122,9 +132,9 @@ See [hotspot2 documentation](https://github.com/Altius/hotspot2) for file descri
 |9|`summit_pos`| 97320049 | Estimated footprint summit position|
 |10|`core_start`| 97320042 | Start position of core-region containing 95% of per-biosample summits|
 |11|`core_end`| 97320053 | End position of core-region containing 95% of per-biosample summits|
-|12|`motif_clusters`| CTCF;KLF/SP/2;ZNF563 | [Non-redundant motif archetype matches](/resources/motifs) w/ 90% overlap, `;` delimited|
+|12|`motif_clusters`| CTCF;KLF/SP/2;ZNF563 | [Non-redundant motif archetype matches](/resources/motif_clustering) w/ 90% overlap, `;` delimited|
 
-**Footprinted motif archetypes** (`Collapsed_motifs_overlapping_consensus_footprints_hg38.bed.gz`)
+**Footprinted motif archetypes** (`collapsed_motifs_overlapping_consensus_footprints_hg38.bed.gz`)
 
 || Column | Example | Description |
 |---|-------|--------|---------|
@@ -136,14 +146,31 @@ See [hotspot2 documentation](https://github.com/Altius/hotspot2) for file descri
 |6|  `strand`        |+           |Strand (+ or -)|
 |7|  `thickStart`    |1782520     |Same as 'start'|
 |8|  `thickEnd`      |1782770     |Same as 'end'|
-|9| `itemRgb`      |0,28,255     |RGB string for UCSC browser|
+|9|  `itemRgb`       |0,28,255    |RGB string for UCSC browser|
 |10| `best_model`    |TBX20_TBX_1 |Best matching motif model from cluster|
 |11| `match_score`   |5.4513      |MOODS match score for best cluster match|
 |12| `DBD`           |TBX         |DNA binding domain family|
 |13| `num_models`    |2           |Number of motif models from cluster with a match|
 
 
-For more information about the motif archetypes see [here](/resources/motifs).
+For more information about the motif archetypes see [here](/resources/motif_clustering).
 
+**Variants tested for imbalance** (`tested_snvs_padj.bed.gz`)
+
+|| Column | Example | Description |
+|---|-------|--------|---------|
+|1|  `contig`        |chr10        |Chromosome|
+|2|  `start`         |404425     |Start position (0-based)|
+|3|  `end`           |404426     |End position|
+|4|  `ref`           |G           |Reference allele|
+|5|  `alt`           |T           |Alternative allele|
+|6|  `total_reads`   |558         |Number of total reads over variant in het. samples|
+|7|  `ref_reads`     |196         |Number of reads mapped to reference allele|
+|8|  `num_hets`      |6           |Number of heterozygous biosamples|
+|9|  `allelic_ratio` |0.3513      |Proportion reads mapping to reference allele|
+|10| `bb_pval`    |0.0017 |Beta-binomial *p*-value|
+|11| `adj_p`   |0.0468120827793      |Adjusted *p*-value|
+|12| `dhs`           |1         |Overlapping DHS peak (binary indicator)|
+|13| `fps`    |1           |Overlapping consensus footprint (binary indicator)|
 
 
