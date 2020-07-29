@@ -17,7 +17,7 @@ Genomic DNase I footprinting enables quantitative, nucleotide-resolution delinea
 
 ## Downloads
 
-A web directory containing all of the material for download is available [here](https://resources.altius.org/~jvierstra/projects/footprinting.2020/). Note: the same versions of some of the processed data is also persistently hosted at [ZENODO](https://doi.org/10.5281/zenodo.3603548). All files correspond to human genome build `GRChr38/hg38`. See below for [file format descriptions](#appendix-file-format-descriptions).
+A web directory containing all of the material for download is available [here](https://resources.altius.org/~jvierstra/projects/footprinting.2020/). Note: the same versions of some of the processed data is also persistently hosted at [ZENODO](https://doi.org/10.5281/zenodo.3603548) and the [ENCODE Project Portal](http://www.encodeproject.org). All files correspond to human genome build `GRChr38/hg38`. See below for [file format descriptions](#appendix-file-format-descriptions).
 
 - **Metadata containing information about the 243 biosamples analyzed** ([excel](https://resources.altius.org/~jvierstra/projects/footprinting.2020/Supplementary_Table_1.xlsx)) (corresponds to manuscript *Supplementary Table 1*)
 
@@ -97,6 +97,10 @@ Documentation is hosted at [Read the docs](http://footprint-tools.readthedocs.io
 If you use this resource in your research, please cite:
 
 Vierstra J *et al.* (2020). [Global reference mapping and dynamics of human transcription factor footprints.](https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1) *bioRxiv*.
+
+## Acknowledgements
+
+This work was funded through the NHGRI ENCODE Project (NIH grants U54HG007010 and 5UM1HG009444)
 
 ## Appendix: File format descriptions
 
