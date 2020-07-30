@@ -15,11 +15,11 @@ A complete bibliography can be found at either [PubMed](https://pubmed.ncbi.nlm.
 
 ## 2020
 
-- ***Vierstra J***<sup>#</sup>, Lazar J, Sandstrom R *et al.* (2020). Global reference mapping of human transcription factor footprints. *Nature*, *in press*. [Pre-print](https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3905306.svg)](https://doi.org/10.5281/zenodo.3905306) ([Supplementary website](resources/dgf))
+- ***Vierstra J***<sup>#</sup>, Lazar J, Sandstrom R, Halow J, Lee K, Bates D, Diegel M, Dunn D, Neri F, Haugen E, Rynes E, Reynolds A, Nelson J, Johnson A, Frerker M, Buckley M, Kaul R, Meuleman W, Stamatoyannopoulos JA<sup>#</sup> (2020). [Global reference mapping of human transcription factor footprints](https://www.nature.com/articles/s41586-020-2528-x). *Nature*, 583(7818):729–736. [Pre-print](https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3905306.svg)](https://doi.org/10.5281/zenodo.3905306) ([Supplementary website](resources/dgf))
 
 ## 2019
 
-- Georgolopoulos G, Iwata M, Psatha N, Yiangou M, ***Vierstra J***<sup>#</sup> (2019). [Unbiased phenotypic identification of functionally distinct hematopoietic progenitors.](https://link.springer.com/article/10.1186/s40709-019-0097-7) *J Biol Res (Thessalon)*, (26)4.
+- Georgolopoulos G, Iwata M, Psatha N, Yiangou M, ***Vierstra J***<sup>#</sup> (2019). [Unbiased phenotypic identification of functionally distinct hematopoietic progenitors.](https://link.springer.com/article/10.1186/s40709-019-0097-7) *J Biol Res (Thessalon)*, 26(4).
 
 ## 2016
 
