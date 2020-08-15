@@ -77,8 +77,18 @@ Clustering of 2179 motif models (3 databases above)
 	| Human (hg38)| [bed.gz](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0) + [tabix](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0), [bigBed](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0) | [bed.gz](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0) + [tabix](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0), [bigBed](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0)  |
 	| Mouse (mm10)| [bed.gz](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0) + [tabix](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0), [bigBed](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0)  | [bed.gz](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0) + [tabix](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0), [bigBed](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0)  |
 
-	{% include warning.html content="These files are massive (>40Gb)!" %}
 
+	Note that theses files are massive (>\~40Gb) -- we have provided a TABIX-index alongside to facilitate remote access using ```tabix```:
+
+```
+[jvierstra@test0 $] tabix https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0/hg38.archetype_motifs.v1.0.bed.gz chr19:45,001,882-45,002,279
+chr19	45001871	45001883	ZNF306	4.4101	-	ZNF306_C2H2_1	1
+chr19	45001891	45001907	TBX/1	7.8289	+	BRAC_HUMAN.H11MO.0.A	1
+chr19	45001896	45001916	GC-tract	8.4712	+	ZN467_HUMAN.H11MO.0.C	1
+chr19	45001897	45001914	KLF/SP/2	13.2278	+	PATZ1_HUMAN.H11MO.0.C	5
+chr19	45001898	45001908	HD/12	8.7818	+	PBX3_MA1114.1	1
+...
+```
 
 ### File format descriptions
 
@@ -127,13 +137,13 @@ python2 moods_dna.py  \
 
 If you use this resource in your research, please kindly cite:
 
-Vierstra J *et al.* (2020). [Global reference mapping and dynamics of human transcription factor footprints.](https://www.biorxiv.org/content/10.1101/2020.01.31.927798v1) *bioRxiv*.
+[Vierstra2020](https://doi.org/10.1038/s41586-020-2528-x) Vierstra, J., Lazar, J., Sandstrom, R. *et al.* Global reference mapping of human transcription factor footprints. *Nature* **583**, 729–736 (2020)
 
 ## Additional resources
 
-Admittedly, I am far from the first person to cluster motif models. In any case, this resource is/was largely intended to aid in visualizing and "surfing" the genome browser and to accompany other annotations (e.g., ChIP-seq, DGF, etc).
+Admittedly, I am far from the first person to cluster motif models. In any case, this resource is/was largely intended to aid in visualizing and "surfing" the genome browser and to accompany other annotations (e.g., ChIP-seq, DGF, etc.).
 
-I have compiled a list of publications, websites and databases pertaining the the curation of motif models which may of be of use. If you find something useful, please contact me and I will include it here.
+Below I have compiled a list of publications, websites and databases pertaining the the curation of motif models which may of be of use. If you find something useful or if I have missed something, please contact me and I will include it here.
 
 **Clustering:**
 - [RSAT](http://jaspar.genereg.net/matrix-clusters/): Clustering methodology used as part of JASPAR project ([publication link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5737723/))
