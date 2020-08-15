@@ -78,8 +78,7 @@ Clustering of 2179 motif models (3 databases above)
 	| Mouse (mm10)| [bed.gz](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0) + [tabix](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0), [bigBed](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0)  | [bed.gz](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0) + [tabix](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0), [bigBed](https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0)  |
 
 
-	Note that theses files are massive (>\~40Gb) -- we have provided a TABIX-index alongside to facilitate remote access using ```tabix```:
-
+	Note: Theses files are massive (>\~40Gb). We have provided a TABIX-index alongside to facilitate remote access using ```tabix```:
 ```
 [jvierstra@test0 $] tabix https://resources.altius.org/~jvierstra/projects/motif-clustering/releases/v1.0/hg38.archetype_motifs.v1.0.bed.gz chr19:45,001,882-45,002,279
 chr19	45001871	45001883	ZNF306	4.4101	-	ZNF306_C2H2_1	1
