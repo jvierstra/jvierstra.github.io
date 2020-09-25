@@ -7,7 +7,11 @@ I am an investigator at the Altius Institute for Biomedical Sciences. My researc
 
 - **Mapping chromatin structure & function using nucleases**
 
-  Specific and non-specific endonucleases have arguably been the most important tools in modern genomic research (*e.g.*, restriction nucleases or more recently genome-editing reagents). I have developed methods that leverage nucleases to create *in vivo* nucleotide-resolution maps of transcription factor occupancy and function within the genome.
+  Specific and non-specific endonucleases have arguably been the most important tools in modern genomic research (*e.g.*, restriction nucleases or more recently genome-editing reagents). We develop methods that leverage nucleases to create *in vivo* nucleotide-resolution [maps of transcription factor occupancy](https://www.nature.com/articles/s41586-020-2528-x) and [function within the genome](https://www.nature.com/articles/nmeth.3554) in primary cells, tissue types and disease states.
+
+- **Understanding gene regulation through human genetics**
+
+  The regulation of gene expression by *cis*-regulatory DNA elements can occur over tremendous distances. Linking individual distal regulatory elements to their cognate gene(s) remains a significant challenge. We leverage naturally occuring human regualtory genetic variation and make use of allelic imbalance in epigenomics and gene expression data across large cohorts of distinct individuals and cell-types to gain mechanistic insights into how genes are normally regulated and disregulated in disease.
 
 - **Cis-regulatory encoding of cell identity and fate potential**
 
