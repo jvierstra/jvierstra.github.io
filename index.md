@@ -11,7 +11,7 @@ I am an investigator at the Altius Institute for Biomedical Sciences. My researc
 
 - **Understanding gene regulation through the lens of human genetics**
 
-  The regulation of gene expression by *cis*-regulatory DNA elements can occur over tremendous distances. Linking individual distal regulatory elements to their cognate gene(s) remains a significant challenge. We leverage naturally occuring human regualtory genetic variation and make use of allelic imbalance in epigenomics and gene expression data across large cohorts of distinct individuals and cell-types to gain mechanistic insights into how genes are normally regulated and disregulated in disease.
+  The regulation of gene expression by *cis*-regulatory DNA elements can occur over tremendous distances. Linking individual distal regulatory elements to their cognate gene(s) remains a significant challenge. We leverage naturally occuring human regulatory genetic variation and make use of allelic imbalance in epigenomics and gene expression data across large cohorts of distinct individuals and cell-types to gain mechanistic insights into how genes are normally regulated and disregulated in disease.
 
 - **Cis-regulatory encoding of cell identity and fate potential**
 
