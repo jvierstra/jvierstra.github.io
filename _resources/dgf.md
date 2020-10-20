@@ -138,7 +138,7 @@ See [hotspot2 documentation](https://github.com/Altius/hotspot2) for file descri
 |11|`core_end`| 97320053 | End position of core-region containing 95% of per-biosample summits|
 |12|`motif_clusters`| CTCF;KLF/SP/2;ZNF563 | [Non-redundant motif archetype matches](/resources/motif_clustering) w/ 90% overlap, `;` delimited|
 
-Note: A seperate version of this file is also available (`consensus_footprints_and_motifs_hg38.bed.gz`) where column 12 is the motifs that overlap (≥3np) footprints for all (not-collapsed) PWM models.
+Note: A seperate version of this file is also available (`consensus_footprints_and_motifs_hg38.bed.gz`; [gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_footprints_and_motifs_hg38.bed.gz) and [tabix index](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_footprints_and_motifs_hg38.bed.gz.tbi)) where column 12 is the motifs that overlap (≥3np) footprints for all (not-collapsed) PWM models.
 
 **Footprinted motif archetypes** (`collapsed_motifs_overlapping_consensus_footprints_hg38.bed.gz`)
 
