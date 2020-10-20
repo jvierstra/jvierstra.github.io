@@ -5,7 +5,7 @@ excerpt: >
         Genomic DNase I footprinting enables quantitative, nucleotide-resolution delineation of sites of transcription factor occupancy within native chromatin. We combined sampling of >67 billion uniquely mapping DNase I cleavages from >240 human cell types and states to index human genomic footprints.
 header:
   teaser: /assets/img/teasers-01.png
-date: 2020-07-10
+date: 2020-10-20
 toc: True
 toc_sticky: True
 ---
@@ -55,7 +55,7 @@ chr19   45001887        45001888        0.026677374186842684    2.44857805142828
 
   Additionally, an example of how to remotely access and plot these data using Python can be found [here](https://footprint-tools.readthedocs.io/en/latest/examples/plot.html).
 
-- **Consensus footprints** ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_footprints_and_motifs_hg38.bed.gz) and [tabix index](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_footprints_and_motifs_hg38.bed.gz.tbi))  
+- **Consensus footprints** ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_footprints_and_collapsed_motifs_hg38.bed.gz) and [tabix index](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/consensus_footprints_and_collapsed_motifs_hg38.bed.gz.tbi))  
   Re-analysis of the individual datasets using an Emperical Bayesian framework.
 
   - **Footprinted motif archetypes** ([gzipped bed](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/collapsed_motifs_overlapping_consensus_footprints_hg38.bed.gz) and [tabix index](https://resources.altius.org/~jvierstra/projects/footprinting.2020/consensus.index/collapsed_motifs_overlapping_consensus_footprints_hg38.bed.gz.tbi))  
@@ -121,7 +121,7 @@ See [hotspot2 documentation](https://github.com/Altius/hotspot2) for file descri
 |7|`winlp`|14.5 | –log *p*-value windowed test (Stouffer's *Z*)|
 |8|`fdr`| 0.0014 | Empircal false-discovery rate |
 
-**Consensus footprints** (`consensus_footprints_and_motifs_hg38.bed.gz`)
+**Consensus footprints** (`consensus_footprints_and_collapsed_motifs_hg38.bed.gz`)
 
 || Column | Example | Description |
 |---|-------|--------|---------|
@@ -137,6 +137,8 @@ See [hotspot2 documentation](https://github.com/Altius/hotspot2) for file descri
 |10|`core_start`| 97320042 | Start position of core-region containing 95% of per-biosample summits|
 |11|`core_end`| 97320053 | End position of core-region containing 95% of per-biosample summits|
 |12|`motif_clusters`| CTCF;KLF/SP/2;ZNF563 | [Non-redundant motif archetype matches](/resources/motif_clustering) w/ 90% overlap, `;` delimited|
+
+Note: A seperate version of this file is also availavle (`consensus_footprints_and_motifs_hg38.bed.gz`) where column 12 is the ovleraps (≥3np) for all (not-collapsed) PWM models.
 
 **Footprinted motif archetypes** (`collapsed_motifs_overlapping_consensus_footprints_hg38.bed.gz`)
 
