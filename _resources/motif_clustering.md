@@ -142,7 +142,7 @@ If you use this resource in your research, please kindly cite:
 
 Admittedly, I am far from the first person to cluster motif models. In any case, this resource is/was largely intended to aid in visualizing and "surfing" the genome browser and to accompany other annotations (e.g., ChIP-seq, DGF, etc.).
 
-Below I have compiled a list of publications, websites and databases pertaining the the curation of motif models which may of be of use. If you find something useful or if I have missed something, please contact me and I will include it here.
+Below I have compiled a list of publications, websites and databases pertaining to the curation of motif models which may of be of use. If you find something useful or if I have missed something, please contact me and I will include it here.
 
 **Clustering:**
 - [RSAT](http://jaspar.genereg.net/matrix-clusters/): Clustering methodology used as part of JASPAR project ([publication link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5737723/))
