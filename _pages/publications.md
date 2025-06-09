@@ -9,9 +9,12 @@ A complete bibliography can be found at either [PubMed](https://pubmed.ncbi.nlm.
 
 \* denotes equal contribution, <sup>#</sup> corresponding author
 
+## 2025
+- Psatha N, Sova P, Georgolopoulos G, Paschoudi K, Iwata M, Bloom J, Ulyanova T, Wang H, Kirtsou A, Vasiloudis NI, Wilken MS, Stamatoyannopoulos JA, Yannaki E, Papayanopoulou T, Stamatoyannopoulos G, ***Vierstra J***<sup>#</sup> (2025). [Large-scale discovery of potent, compact and erythroid specific enhancers for gene therapy vectors](https://www.nature.com/articles/s41467-025-59235-x) *Nature Communications*, 16, Article number: 4325. [Pre-print](https://www.biorxiv.org/content/10.1101/2023.10.04.559165v1)
+
 ## 2021
 
-- Georgolopoulos G, Iwata M, Psatha N, Nishida A, Som T, Yiangou M, Stamatoyannopoulos JA, ***Vierstra J***<sup>#</sup> (2020). [Chromatin dynamics during hematopoiesis reveal discrete regulatory modules instructing differentiation.] (https://www.nature.com/articles/s41467-021-27159-x) *Nature Communications*, **12**, Article number: 6790. [Pre-print](https://www.biorxiv.org/content/10.1101/2020.04.02.022566v3)
+- Georgolopoulos G, Iwata M, Psatha N, Nishida A, Som T, Yiangou M, Stamatoyannopoulos JA, ***Vierstra J***<sup>#</sup> (2021). [Chromatin dynamics during hematopoiesis reveal discrete regulatory modules instructing differentiation.](https://www.nature.com/articles/s41467-021-27159-x) *Nature Communications*, 12, Article number: 6790. [Pre-print](https://www.biorxiv.org/content/10.1101/2020.04.02.022566v3)
 
 ## 2020
 
